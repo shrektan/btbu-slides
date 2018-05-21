@@ -1,0 +1,83 @@
+---
+title: "R在保险资产管理中的应用"
+# subtitle: ""
+author: "谭显英"
+date: "2018年5月20日"
+output:
+  xaringan::moon_reader:
+    css: [default, tamu, tamu-fonts, zh-CN.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      countdown: 60000
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# 作者介绍
+
+* 本科硕士均就读于南开大学保险系，研究方向精算学；
+
+
+???
+
+---
+
+# 目录 —— 目标
+
+* 暗暗
+
+.pull-left[
+* 保险资产管理公司业务介绍
+]
+
+.pull-right[
+* 了解保险资产管理公司、资产管理行业主要的业务构成等；
+]
+
+???
+
+* 自己在学生时代听讲座，很希望听到一些贴近实务的东西，更希望演讲人能够在在学生的角度来将事情。
+* 
+
+---
+
+# 为什么要用 <img src="https://mirrors.tuna.tsinghua.edu.cn/CRAN/Rlogo.svg" style="width: 15%" /> ?
+
+
+
+---
+
+# 开源社区和RStudio <img src="RStudio-Logo-Blue-Gray-1200x421.png" style = "width :15%" />
+
+
+
+
+# R可以做什么？
+
+---
+
+# 一些实际的例子
+
+---
+
+# 如何入门？
+
+- 不错的R Package
+    - ggplot2
+
+
+
+---
+
+class: center
+
+# 谢谢
+.left[
+* Github: https://github.com/shrektan
+* Email: [shrektan@126.com](mailto:shrektan@126.com)
+]
