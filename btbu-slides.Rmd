@@ -7,6 +7,7 @@ output:
   xaringan::moon_reader:
     css: [default, tamu, tamu-fonts, zh-CN.css]
     lib_dir: libs
+    chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: github
       highlightLines: true
@@ -25,19 +26,14 @@ options(htmltools.dir.version = FALSE)
 
 ???
 
+* 简单介绍自己学习的经历？
+
 ---
 
-# 目录 —— 目标
+# 目录
 
-* 暗暗
+* 保险资产管理公司
 
-.pull-left[
-* 保险资产管理公司业务介绍
-]
-
-.pull-right[
-* 了解保险资产管理公司、资产管理行业主要的业务构成等；
-]
 
 ???
 
@@ -52,7 +48,7 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# 开源社区和RStudio <img src="RStudio-Logo-Blue-Gray-1200x421.png" style = "width :15%" />
+# 开源社区和RStudio <img src="assets/RStudio-Logo-Blue-Gray-1200x421.png" style = "width :15%" />
 
 
 
