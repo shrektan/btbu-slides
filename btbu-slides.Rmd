@@ -21,11 +21,17 @@ options(htmltools.dir.version = FALSE)
 
 # 作者介绍
 
-* 本科硕士均就读于南开大学保险系，研究方向精算学；
+* 本科硕士均就读于南开大学保险系，精算学方向；
+
+--
 
 * 寿险公司精算部准备金评估处实习过，后来一直在保险资产管理公司工作，主要负责投资管理模型、股票量化投资模型等的搭建和维护。
 
+--
+
 * 职业：矿工(Quant) —— 码农(Code Monkey) —— 软件工程师(Soft Engineer)
+
+--
 
 * 对计算机知识比较了解，比较熟悉的语言和工具有：
     - R —— 重度使用患者，作为_“Interface Language”_适合和人类交互也适合和其他计算机程序交互；
@@ -42,15 +48,21 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# 小小目标
+## 小小目标
 
 * 对资产管理行业有一些简单了解、对保险资产管理公司干什么形成一些感性认识；
 
-* “编程”并不__“吓人”__，也不__“难”__。“码字”能帮助自己把问题理解清楚、透彻。“码字”的过程中能够收获不一样的感觉 —— 创造事物的成就感；
+* “编程”并不“吓人”，也不“难”__。“码字”能帮助自己把问题理解清楚、透彻。“码字”的过程中能够收获不一样的感觉 —— 创造事物的成就感；
 
-* R语言是很强大的，可以用来完成很多很多有趣、有用的事情；
+* R语言很强大，非常适合在金融保险行业日常工作运用，可以用来完成很多有趣、也很实用的事情；
 
-* 能有2~3个童鞋能对R感兴趣，加入到R社区中，是最好不过的了。
+## 小小心愿
+
+1. 能有20%的童鞋愿意回家打开电脑；
+
+1. 装上R并花上一个小时去感受下；
+
+1. 就算是我个人的小小成功。
 
 ???
 
@@ -63,13 +75,19 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
+
+
 # 目录
 
 * 保险资产管理公司业务介绍
+
 * 为什么要学编程？
+
 * 为什么要选择R？
+
 * 案例分享
-* FAQ
+
+* Q&A
 
 ???
 
@@ -81,8 +99,10 @@ options(htmltools.dir.version = FALSE)
 * 保险公司
     - 主要是指寿险公司，因为？
     - 为什么要单独设立保险资产管理公司？
+    
 * 投资板块
     - 三差中的“利差”；
+    
 * 融资板块
     - 也即投行板块，帮助企业融资 —— 发行基础设施债权计划、不动产债权计划和股权计划等；
     - 和银行、证券的投行部有什么不同？
@@ -101,6 +121,7 @@ options(htmltools.dir.version = FALSE)
 
 # 为什么要用 <img src="https://mirrors.tuna.tsinghua.edu.cn/CRAN/Rlogo.svg" style="width: 15%" /> ?
 
+# What is R
 
 
 ---
@@ -158,9 +179,15 @@ http://www.maptcm.net
 
 ---
 
-class: center middle
+## 案例 —— 地图
 
-# FAQ
+
+
+---
+
+class: center middle 
+
+background-image: url(./assets/QA.jpg)
 
 ---
 
@@ -170,5 +197,6 @@ class: center
 
 .left[
 * Github: https://github.com/shrektan
+
 * Email: [shrektan@126.com](mailto:shrektan@126.com)
 ]
