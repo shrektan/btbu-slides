@@ -25,6 +25,8 @@ options(htmltools.dir.version = FALSE)
 
 * 寿险公司精算部准备金评估处实习过，后来一直在保险资产管理公司工作，主要负责投资管理模型、股票量化投资模型等的搭建和维护。
 
+* 职业：矿工(Quant) —— 码农(Code Monkey) —— 软件工程师(Soft Engineer)
+
 * 对计算机知识比较了解，比较熟悉的语言和工具有：
     - R —— 重度使用患者，作为_“Interface Language”_适合和人类交互也适合和其他计算机程序交互；
     - C++ —— 速度快，稳定性强，但是坑多学习曲线陡峭，只用来构建计算量很大或者复杂度很高的模型中的核心部分；
@@ -48,13 +50,16 @@ options(htmltools.dir.version = FALSE)
 
 * R语言是很强大的，可以用来完成很多很多有趣、有用的事情；
 
+* 能有2~3个童鞋能对R感兴趣，加入到R社区中，是最好不过的了。
+
 ???
 
 
-* 自己在学生时代听讲座，很希望听到一些贴近实务的东西，也希望演讲者能够理解学生的知识面，有针对性地讲东西。
+* 自己在学生时代，很希望听到一些贴近实务的东西，也希望演讲者能够理解学生的知识面，有针对性地讲东西。
 
-* 我会努力，但是工作后形成的“常识”，有时候自己很难意识到，欢迎同学们对于听不懂的地方，暴力打断。
+* 工作后形成的“常识”，有时候自己很难意识到，欢迎同学们对于听不懂的地方，暴力打断。
 
+* 另外，咱们这个交流，也不一定要严格按照议程来~ 特点就是接地气，不玩高大上，想到哪儿说到哪儿。
 
 ---
 
@@ -74,14 +79,23 @@ options(htmltools.dir.version = FALSE)
 # 保险资产管理公司业务介绍
 
 * 保险公司
+    - 主要是指寿险公司，因为？
+    - 为什么要单独设立保险资产管理公司？
 * 投资板块
+    - 三差中的“利差”；
 * 融资板块
+    - 也即投行板块，帮助企业融资 —— 发行基础设施债权计划、不动产债权计划和股权计划等；
+    - 和银行、证券的投行部有什么不同？
 
 ---
 
 # 为什么要学编程？
 
+## 也可以这么问——为什么不用Excel？
 
+- 项目大了，不便于维护
+- R的Package很多，很强大
+- It's the future.
 
 ---
 
@@ -93,6 +107,16 @@ options(htmltools.dir.version = FALSE)
 
 # 开源社区和RStudio <img src="assets/RStudio-Logo-Blue-Gray-1200x421.png" style = "width :15%" />
 
+The good times...
+
+- Open sources
+- RStudio
+- Hadley Wickham
+- Yihui Xie
+- Github
+- Machine learning
+- Docker
+- ...
 
 ---
 
@@ -102,20 +126,48 @@ options(htmltools.dir.version = FALSE)
 
 # 一些实际的例子
 
+## 数据读取写入
+
+## ggplot2画图
+
+## C++
+
+## 发邮件
+
+## knitr生成pdf报告
+
+## shiny
+
+http://www.maptcm.net
+
 ---
 
 # 如何入门？
 
-- 不错的R Package
-    - ggplot2
+1. 安装R、RStudio、R Packages
+1. 想个项目
 
 
+## The must-learned R packages
+
+- data.table
+- tidyverse
+- knitr
+- ggplot2
+- shiny
+
+---
+
+class: center middle
+
+# FAQ
 
 ---
 
 class: center
 
 # 谢谢
+
 .left[
 * Github: https://github.com/shrektan
 * Email: [shrektan@126.com](mailto:shrektan@126.com)
