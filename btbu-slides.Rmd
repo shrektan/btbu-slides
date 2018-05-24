@@ -245,17 +245,22 @@ class: inverse middle center
 
 ---
 
-# WHY R? WHY NOT Excel?
+### EXCEL虽好，但不能贪杯
 
-### 什么是理想的工具？
+- 直观简单，容易上手
+
+- 办公室基本每个人都有安装，分享自己的成果比较容易
+
+- EXCEL公式、VBA、数据透视表等工具还是比较强大
+
+- 作图比较容易直观
 
 
+### EXCEL的缺点
 
----
+- 统计功能比较欠缺
 
-# 为什么要用 ?
 
-# What is R
 
 
 ---
@@ -283,7 +288,12 @@ The good times...
 
 ---
 
+class: inverse middle center
+background-image: url(https://a-ssl.duitang.com/uploads/item/201511/25/20151125212058_hJfQR.thumb.700_0.png)
+background-size: cover
+
 # R可以做什么？
+
 
 ---
 
@@ -305,9 +315,28 @@ http://www.maptcm.net
 
 ---
 
+### 案例：（无聊的）线性回归
+
+```{r}
+set.seed(20)
+y <- rnorm(100)
+x <- rnorm(100)
+model <- lm(y ~ x)
+summary(model)
+```
+
+---
+
+### 案例：（无聊的）线性回归
+
+```{r lmplot}
+plot(model, 1)
+```
+---
+
 .pull-left[
 
-### 数据变换——data.table
+### 案例：数据变换——data.table
 
 ```{r, message=FALSE}
 library(data.table)
@@ -321,7 +350,7 @@ tbl[, VALUE2 := cumsum(VALUE), by = ITEM][]
 
 .pull-right[
 
-### 数据变换——dplyr
+### dplyr
 
 ```{r, message=FALSE}
 library(dplyr)
