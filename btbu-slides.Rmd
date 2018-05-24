@@ -164,6 +164,9 @@ class: middle center
 
 ---
 
+
+<img src="assets/love-insurance.jpg" width="50%" style= "float:right;" />
+
 ## 保险公司
 
 --
@@ -230,40 +233,52 @@ class: middle center
 
 ---
 
-class: reverse middle center
+class: inverse middle center
 
-# R
-
----
-
-# 为什么要学编程？
-
-## 也可以这么问——为什么不用Excel？
-
-- 项目大了，不便于维护
-- R的Package很多，很强大
-- It's the future.
+<img src="https://mirrors.tuna.tsinghua.edu.cn/CRAN/Rlogo.svg" style="width: 50%"/> 
 
 ---
 
-# 为什么要用 <img src="https://mirrors.tuna.tsinghua.edu.cn/CRAN/Rlogo.svg" style="width: 15%" /> ?
+class: inverse middle center
+
+# WHY R? WHY NOT Excel?
+
+---
+
+# WHY R? WHY NOT Excel?
+
+### 什么是理想的工具？
+
+
+
+---
+
+# 为什么要用 ?
 
 # What is R
 
 
 ---
 
-# 开源社区和RStudio <img src="assets/RStudio-Logo-Blue-Gray-1200x421.png" style = "width :15%" />
+
+# 开源社区
 
 The good times...
 
 - Open sources
-- RStudio
+
+- RStudio <img src="assets/RStudio-Logo-Blue-Gray-1200x421.png" style = "width :10%" />
+
 - Hadley Wickham
-- Yihui Xie
+
+- 谢益辉
+
 - Github
+
 - Machine learning
+
 - Docker
+
 - ...
 
 ---
@@ -290,31 +305,130 @@ http://www.maptcm.net
 
 ---
 
-# 如何入门？
+.pull-left[
 
-1. 安装R、RStudio、R Packages
-1. 想个项目
+### 数据变换——data.table
+
+```{r, message=FALSE}
+library(data.table)
+tbl <- data.table(ITEM = c("A", "A", "B", "B", "B"), VALUE = 1:5)
+tbl[, .(VALUE = sum(VALUE)), keyby = ITEM]
+tbl[, VALUE2 := cumsum(VALUE), by = ITEM][]
+```
+
+]
 
 
-## The must-learned R packages
+.pull-right[
 
-- data.table
-- tidyverse
-- knitr
-- ggplot2
-- shiny
+### 数据变换——dplyr
+
+```{r, message=FALSE}
+library(dplyr)
+tbl <- tibble(ITEM = c("A", "A", "B", "B", "B"), VALUE = 1:5)
+tbl %>% group_by(ITEM) %>% summarize(VALUE = sum(VALUE))
+tbl %>% group_by(ITEM) %>% mutate(VALUE2 = cumsum(VALUE))
+```
+]
+
 
 ---
 
-## 案例 —— 地图
+### 读写Excel
+
+```{r excel}
+excel_file <- tempfile(fileext = "xlsx")
+writexl::write_xlsx(iris, excel_file)
+readxl::read_excel(excel_file)
+```
+
+---
+
+### 案例 —— 数据可视化DT
+
+```{r DT}
+DT::datatable(iris) # yes, that simple!
+```
+
+---
 
 
+### 案例 —— 数据可视化ggplot
+
+```{r ggplot, message=FALSE, warning=FALSE, out.height="300px", out.width="600px", height=5, width=10}
+library(ggplot2)
+set.seed(100)
+tbl <- data.frame(x = sample(LETTERS, 100, replace = TRUE))
+p <- ggplot(tbl, aes(x = x)) + geom_histogram(stat = "count", fill = "skyblue")
+plot(p)
+```
+
+---
+
+### 案例 —— 数据可视化ggplotly
+
+```{r ggplotly, message=FALSE, out.height="400px", out.width="600px"}
+plotly::ggplotly(p)
+```
+
+---
+
+### 案例 —— 和C++混合使用
+
+```{r cpp}
+Rcpp::cppFunction("NumericVector log_rtn(NumericVector simple_rtn) {
+  NumericVector res(simple_rtn.size());
+  std::transform(
+    simple_rtn.begin(), simple_rtn.end(), res.begin(),
+    [](const double x) { return std::log(x + 1.0); }
+  );
+  return res;
+}", plugins = "cpp11")
+
+simple_rtn <- c(0.03, 0.05, 0.08, -0.10, -0.02)
+log(simple_rtn + 1.0) # R version
+log_rtn(simple_rtn) # cpp version
+```
+
+---
+
+### 案例 —— 创建网页APP
+
+<iframe src="http://www.maptcm.net", width="100%", heigh="80%"></iframe>
 
 ---
 
 class: center middle 
 
 background-image: url(./assets/QA.jpg)
+
+---
+
+class: center middle inverse
+
+# 末了
+
+--
+
+## 刚开始请一定记得用RStudio
+
+---
+
+
+.pull-left[
+# R自带的GUI
+
+<img src="assets/R-GUI.JPG" style="width: 100%"/> 
+
+### 并不是那么用户友好
+]
+
+--
+
+.pull-right[
+# 建议使用RStudio
+<img src="assets/RStudio-GUI.JPG" style="width: 100%"/> 
+]
 
 ---
 
