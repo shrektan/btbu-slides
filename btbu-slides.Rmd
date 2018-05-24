@@ -107,9 +107,7 @@ background-size: cover
 .font-large[ 
 * 保险资产管理公司业务介绍
 
-* 为什么要学编程？
-
-* 为什么要选择R？
+* R介绍
 
 * 案例分享
 
@@ -253,15 +251,42 @@ class: inverse middle center
 
 - EXCEL公式、VBA、数据透视表等工具还是比较强大
 
-- 作图比较容易直观
+- 作图比较漂亮，和OFFICE套件配合比较方便
 
 
 ### EXCEL的缺点
 
 - 统计功能比较欠缺
 
+- 很难把项目做大
+
+    - 缺乏版本控制系统
+    
+    - 输入和输出没法控制，一不小心就把不相干的单元格更改了
+
+- 很难完全自动化
+
+    - 更新数据可能需要粘来粘去
 
 
+---
+
+# R的优点
+
+- 适合偏统计的工作 —— 事实上大量的金融工作就是在做“统计实务”
+
+- _Interface Language_ 适合和人交互，也能和其他语言交互
+
+- 便利的帮助系统
+
+    - [Introduction to data.table](https://mirrors.tuna.tsinghua.edu.cn/CRAN/web/packages/data.table/vignettes/datatable-intro.html)
+    - [?dplyr::na_if](https://www.rdocumentation.org/packages/dplyr/versions/0.7.5/topics/na_if)
+
+- 超级棒的R社区 —— 活跃的大神、大量的新工具…
+
+- “真正”的计算机语言 —— 版本控制系统Git、单元测试、Package…
+
+- 好用的Package生态
 
 ---
 
@@ -278,6 +303,10 @@ The good times...
 
 - 谢益辉
 
+- Rcpp
+
+- data.table
+
 - Github
 
 - Machine learning
@@ -292,26 +321,31 @@ class: inverse middle center
 background-image: url(https://a-ssl.duitang.com/uploads/item/201511/25/20151125212058_hJfQR.thumb.700_0.png)
 background-size: cover
 
-# R可以做什么？
-
+# R究竟可以做什么？
 
 ---
 
-# 一些实际的例子
+# IT'S ALL ABOUT DATA
 
-## 数据读取写入
+- 代替Eviews跑计量
 
-## ggplot2画图
+- 各种各样的数据预处理和清晰
 
-## C++
+- 对接数据库、读取csv/excel等
 
-## 发邮件
+- 通过文学化编程生成PDF报告
 
-## knitr生成pdf报告
+- 自己动手做package实现某个模型/算法
 
-## shiny
+- 自动发个邮件？爬个虫？
 
-http://www.maptcm.net
+- 做各种各样好看的可视化图形
+
+- 利用shiny打造一个方便美观又强大的web app
+
+- 对接调用tensorflow等机器学习框架
+
+- ……
 
 ---
 
@@ -423,9 +457,10 @@ log_rtn(simple_rtn) # cpp version
 
 ### 案例 —— 创建网页APP
 
-<iframe src="http://www.maptcm.net", width="100%", heigh="80%"></iframe>
+<iframe src="http://www.maptcm.net", width="100%", height="80%"></iframe>
 
 ---
+
 
 class: center middle 
 
@@ -439,7 +474,7 @@ class: center middle inverse
 
 --
 
-## 刚开始请一定记得用RStudio
+## 请一定记得用RStudio
 
 ---
 
